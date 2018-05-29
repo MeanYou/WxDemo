@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "往期活动",
+  "usingComponents": {
+    "ended-item": "/components/endedItem/endedItem",
+    "ended-date": "/components/endedDate/endedDate"
+  }
+}

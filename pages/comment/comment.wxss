@@ -1,0 +1,25 @@
+/* pages/comment/comment.wxss */
+.container {
+  border-top: 2rpx solid #F2F2F2;
+}
+
+.no-container {
+  width: 750rpx;
+  height: 600rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-comment-img {
+  width: 251rpx;
+  height: 234rpx;
+  margin-top: 179rpx;
+}
+
+.no-comment {
+  font-size: 30rpx;
+  color: #666;
+  margin-top: 79rpx;
+}

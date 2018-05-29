@@ -1,0 +1,13 @@
+<!--pages/My/my-order/index.wxml-->
+<view class="container">
+  <block wx:for="{{orderList}}" wx:key="id">
+    <view class="split"></view>
+    <order-item item-detail="{{item}}"/>
+  </block>
+</view>
+<view class="no-container" wx:if="{{!orderList}}">
+  <view>
+    <image class="no-order-img" src="/images/common/no-order.png"></image>
+  </view>
+  <text class="no-order">暂无订单</text>
+</view>

@@ -1,0 +1,22 @@
+<!--components/endedItem/endedItem.wxml-->
+<view class="item-container">
+  <view class="item-img">
+    <image src="{{itemDetail.img}}"></image>
+    <view class="img-title">厂商直供</view>
+  </view>
+  <view class="item-desc">
+    <view class="item-name">
+      <text>{{itemDetail.name}}</text>
+    </view>
+    <view class="item-price-container">
+      <view class="item-price">
+        <text decode="true">首付{{itemDetail.installment.downPayment}}元&nbsp;&nbsp;月供{{itemDetail.installment.monthlySupply}}元*{{itemDetail.installment.months}}月</text>
+      </view>
+      <view class="item-sales">
+        <text>抢购量： {{itemDetail.sales}}台</text>
+      </view>
+      <image src="./images/ended.png"></image>
+    </view>
+  </view>
+</view>
+<view class="split-line"></view>

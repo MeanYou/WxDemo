@@ -1,0 +1,11 @@
+<!--components/countdown/countdown.wxml-->
+<view class="countdown-container">
+  <view class="count-number">{{endDateDetail.day}}</view>
+  <text>天</text>
+  <view class="count-number">{{endDateDetail.hour}}</view>
+  <text>时</text>
+  <view class="count-number">{{endDateDetail.minute}}</view>
+  <text>分</text>
+  <view class="count-number">{{endDateDetail.second}}</view>
+  <text>秒</text>
+</view>

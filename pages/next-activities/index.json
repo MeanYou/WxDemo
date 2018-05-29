@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "下期活动",
+  "usingComponents": {
+    "countdown": "/components/countdown/countdown",
+    "vote-item": "/components/voteItem/voteItem"
+  }
+}

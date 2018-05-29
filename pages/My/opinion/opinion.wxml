@@ -1,0 +1,9 @@
+<!--pages/My/opinion/opinion.wxml-->
+<view class="container">
+  <view class="opinion-content">
+    <textarea value="{{content}}" data-name="content" bindinput="inputChange" maxlength="100" placeholder="请输入您要反馈的内容"></textarea>
+    <view>{{content.length}}/100</view>
+  </view>
+  <input class="opinion-tel" data-name="tel" type="number" bindinput="inputChange" placeholder="请输入您的联系方式"></input>
+  <view class="big-btn" bindtap="submit">提交</view>
+</view>

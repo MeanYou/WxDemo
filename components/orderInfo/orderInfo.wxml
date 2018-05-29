@@ -1,0 +1,14 @@
+<!--components/orderInfo/orderInfo.wxml-->
+<view class="order-background">
+  <view class="order-container">
+    <view class="user-info">
+      <image src="/images/common/pos.png"></image>
+      <text class="username">{{userInfo.name}}</text>
+      <text class="tel">{{userInfo.tel}}</text>
+    </view>
+    <view class="store">
+      <text style="color: #666;">{{curStore.name}}</text>
+      <text decode="true">&nbsp;&nbsp;{{curStore.location}}</text>
+    </view>
+  </view>
+</view>

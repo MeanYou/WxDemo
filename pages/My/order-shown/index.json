@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "晒单详情",
+  "usingComponents": {
+    "car-card": "/components/carCard/carCard",
+    "comment-shown": "/components/commentShown/commentShown"
+  }
+}

@@ -1,0 +1,114 @@
+/* components/miaoshaItem/miaoshaItem.wxss */
+.item-container {
+  width: 750rpx;
+  border-top: 1rpx solid #ccc;
+}
+
+.item-title {
+  width: 750rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 24rpx;
+  color: #C3BE98;
+}
+
+.item-content {
+  width: 750rpx;
+  height: 270rpx;
+  margin: 40rpx 0 30rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-img {
+  width: 250rpx;
+  text-align: center;
+}
+
+.item-desc {
+  width: 500rpx;
+}
+
+.item-img image {
+  width: 200rpx;
+  height: 180rpx;
+}
+
+.item-name {
+  font-size: 32rpx;
+  color: #111;
+  font-weight: bold;
+  height: 90rpx;
+}
+
+.item-tag {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70rpx;
+}
+
+.item-tag view {
+  width: 130rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 24rpx;
+  background-color: #FEF9F0;
+  color: #F0421E;
+  border: 1rpx solid #F0421E;
+  border-radius: 5rpx;
+  margin-right: 10rpx;
+}
+
+.item-price-container {
+  width: 500rpx;
+  height: 110rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-price {
+  width: 330rpx;
+  height: 110rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.item-guide-price {
+  font-size: 24rpx;
+  color: #8C8C8C;
+  height: 30rpx;
+  line-height: 30rpx;
+}
+
+.item-installment {
+  font-size: 30rpx;
+  color: #111;
+  height: 36rpx;
+  line-height: 36rpx;
+}
+
+.item-reservation {
+  width: 170rpx;
+  height: 110rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-reservation button {
+  width: 160rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  font-size: 28rpx;
+  background-color: #F0421E;
+  color: #FFF;
+  padding: 0;
+}

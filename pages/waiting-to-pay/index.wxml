@@ -1,0 +1,33 @@
+<!--pages/waiting-to-pay/index.wxml-->
+<view class="container">
+  <view class="wait-title">
+    <image class="order-back" src="/images/common/order-back.png"></image>
+    <image class="waiting" src="/images/common/wait.png"></image>
+    <text class="waiting-to-pay">等待支付</text>
+    <text class="time-left">剩余：23分18秒</text>
+    <text class="need-to-pay">需支付：￥1.00</text>
+  </view>
+  <order-info user-info="{{userInfo}}" cur-store="{{curStore}}"></order-info>
+  <car-card order-item="{{orderItem}}"></car-card>
+  <view class="installment-first-year">
+    <text class="pay-way">付款方式：分期</text>
+    <text class="downpayment-detail">首年首付{{installmentFirstYear.downPayment}}元，月供{{installmentFirstYear.monthlySupply}}元*{{installmentFirstYear.months}}期，一元抢购名额</text>
+  </view>
+  <view class="installment-after">
+    <text class="installment-way">分期方式：尾款{{installmentScheme[curInstallmentSchemeIdx].finalPayment}}，月供{{installmentScheme[curInstallmentSchemeIdx].monthlyPayment}}*{{installmentScheme[curInstallmentSchemeIdx].months}}</text>
+  </view>
+  <view class="split"></view>
+  <view class="order-info">
+    <text>订单编号: 7588086814</text>
+    <text>创建时间: 2018-05-01 16:36:54</text>
+  </view>
+  <view class="order-money">
+    <view style="font-size: 24rpx; color: #111;">需支付：</view>
+    <view style="font-size: 46rpx; color: #F0421E; margin-right: 29rpx; margin-top: 27rpx;"> ￥1.00</view>
+  </view>
+</view>
+
+<view class="order-opration">
+  <view class="order-cancel" bindtap="cancelOrder">取消订单</view>
+  <view class="order-pay" bindtap="pay">立即支付</view>
+</view>

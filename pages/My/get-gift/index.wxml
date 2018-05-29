@@ -1,0 +1,26 @@
+<!--pages/My/get-gift/index.wxml-->
+<view class="container">
+  <view class="form-item-input">
+    <view class="form-key">收货人</view>
+    <input class="form-value" value="{{name}}" data-name="name" bindinput="inputChange" placeholder="收货人姓名"></input>
+  </view>
+  <view class="form-item-input">
+    <view class="form-key">手机号码</view>
+    <input class="form-value" value="{{tel}}" data-name="tel" placeholder="输入手机号码"></input>
+  </view>
+  <picker mode="region" data-name="addr" bindchange="inputChange">
+    <view class="form-item-picker">
+      <view class="picker-container">
+        <view class="form-key">配送地址</view>
+        <input class="form-value" value="{{addr}}" placeholder="请选择配送地址"></input>
+      </view>
+      <image src="/images/common/right_gray.png"></image>
+    </view>
+  </picker>
+  <view class="form-item-input">
+    <view class="form-key">详细地址</view>
+    <input class="form-value" value="{{addrDetail}}" data-name="addrDetail" placeholder="不需要重复填写省市区"></input>
+  </view>
+  <view class="big-btn submit-addr">确认提交</view>
+  <view class="submit-tip">信息一旦提交不可更改，请确认无误后再进行提交</view>
+</view>

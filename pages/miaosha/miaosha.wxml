@@ -1,0 +1,70 @@
+<!--pages/miaosha/miaosha.wxml-->
+<view class="container">
+  <view class="swiper-container">
+    <swiper class="swiper-box" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" bindchange="swiperchange">
+      <block wx:for="{{banners}}" wx:key="unique">
+        <swiper-item>
+          <image bindtap="tapBanner" src="{{item.imgUrl}}" class="slide-image" width="750rpx" height="562.5rpx" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="dots">
+      <block wx:for="{{banners}}" wx:key="unique">
+        <view class="dot{{index == swiperCurrent ? ' active' : ''}}"></view>
+      </block>
+    </view>
+  </view>
+  <view class="miaosha-menu">
+    <view class="menu-item" bindtap="checkComment">
+      <image src="./images/judgement.png"></image>
+      <text>晒单评价</text>
+    </view>
+    <view class="menu-item" bindtap="checkNextActivities">
+      <image src="./images/next_preview.png"></image>
+      <text>下期预告</text>
+    </view>
+    <view class="menu-item" bindtap="checkPrevActivities">
+      <image src="./images/before_review.png"></image>
+      <text>精彩往期</text>
+    </view>
+  </view>
+  <view wx:if="{{noticeList}}" class="miaosha-headline">
+    <view class="headline-title">
+      <text>秒杀</text>
+      <text>头条</text>
+    </view>
+    <swiper wx:if="{{noticeList}}" class="headline-swiper" vertical="true" autoplay="true" circular="true" interval="3000">
+      <navigator wx:for-items="{{noticeList.dataList}}" wx:key="id" url="/pages/notice/show?id={{item.id}}" open-type="navigate">
+        <swiper-item>
+          <view class="headline-content">
+            <text class="content">{{item.title}}</text>
+            <text class="time" decode="true">&nbsp;&nbsp;&nbsp;&nbsp;{{item.dateAdd}}</text>
+          </view>
+        </swiper-item>
+      </navigator>
+    </swiper>
+  </view>
+  <view class="split"></view>
+  <view class="miaosha-items" >
+    <view class="miaosha-countdown">
+      <view>
+        <text>本场距结束 </text>
+        <text class="number">{{endDateDetail.day}}</text>
+        <text class="time">天</text>
+        <text class="number">{{endDateDetail.hour}}</text>
+        <text class="time">时</text>
+        <text class="number">{{endDateDetail.minute}}</text>
+        <text class="time">分</text>
+        <text class="number">{{endDateDetail.second}}</text>
+        <text class="time">秒</text>
+      </view>
+    </view>
+    <miaosha-item wx:for-items="{{miaoshaItems}}" wx:key="id" item-detail="{{item}}"></miaosha-item>
+  </view>
+  <view class="split"></view>
+  <subtitle>我们的优势</subtitle>
+  <view class="miaosha-vs">
+    <image src="./images/vs.png"></image>
+  </view>
+  <view class="no-more">没有更多啦</view>
+</view>

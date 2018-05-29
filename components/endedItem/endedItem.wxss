@@ -1,0 +1,84 @@
+/* components/endedItem/endedItem.wxss */
+.item-container {
+  width: 750rpx;
+  height: 300rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-img {
+  width: 230rpx;
+  height: 220rpx;
+  text-align: center;
+  position: relative;
+}
+
+.item-img image {
+  width: 230rpx;
+  height: 220rpx;
+}
+
+.img-title {
+  width: 108rpx;
+  height: 34rpx;
+  background: linear-gradient(to right, #FF8B3E, #E93F2C);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 24rpx;
+  color: #FFF;
+}
+
+.item-desc {
+  position: relative;
+  width: 450rpx;
+  height: 180rpx;
+  margin-left: 20rpx;
+}
+
+.item-name {
+  font-size: 30rpx;
+  color: #111;
+  font-weight: bold;
+  height: 90rpx;
+}
+
+.item-price-container {
+  width: 450rpx;
+  height: 90rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.item-price {
+  width: 330rpx;
+  font-size: 24rpx;
+  color: #999;
+  height: 40rpx;
+  line-height: 40rpx;
+}
+
+.item-sales {
+  font-size: 30rpx;
+  color: #111;
+  height: 36rpx;
+  line-height: 36rpx;
+}
+
+.item-price-container image {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 151rpx;
+  height: 115rpx;
+}
+
+.split-line {
+  width: 700rpx;
+  height: 2rpx;
+  margin-left: 25rpx;
+  background-color: #F2F2F2;
+}

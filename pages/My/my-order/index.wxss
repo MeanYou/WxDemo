@@ -1,0 +1,12 @@
+/* pages/My/my-order/index.wxss */
+.no-order-img {
+  width: 248rpx;
+  height: 217rpx;
+  margin-top: 199rpx;
+}
+
+.no-order {
+  font-size: 30rpx;
+  color: #666;
+  margin-top: 48rpx;
+}

@@ -1,0 +1,46 @@
+<!--pages/confirm-order/index.wxml-->
+<view class="container">
+  <view class="split"></view>
+  <image src="./images/split.png" class="img-split"></image>
+  <view class="user-info">
+    <text class="username">{{userInfo.name}}</text>
+    <text class="tel">{{userInfo.tel}}</text>
+  </view>
+  <view class="store">
+    <text style="color: #666;">{{curStore.name}}</text>
+    <text decode="true">&nbsp;&nbsp;{{curStore.location}}</text>
+  </view>
+  <view class="split"></view>
+  <view class="pay">
+    <image src="./images/weixin.png" class="weixin"></image>
+    <view class="pay-method">微信支付</view>
+    <image src="./images/selected.png" class="selected"></image>
+  </view>
+  <view class="select-pay">微信小程序仅支持微信支付</view>
+  <view class="split"></view>
+  <view class="order-title">
+    <image class="title-img" src="{{orderItem.url}}"></image>
+    <view class="title-name">
+      <text>{{orderItem.name}}</text>
+    </view>
+    <view class="title-money">
+      <view class="money-much">{{orderItem.much}}</view>
+      <view class="money-many">{{orderItem.many}}</view>
+    </view>
+  </view>
+  <view class="installment-first-year">
+    <text class="pay-way">付款方式：分期</text>
+    <text class="downpayment-detail">首年首付{{installmentFirstYear.downPayment}}元，月供{{installmentFirstYear.monthlySupply}}元*{{installmentFirstYear.months}}期，一元抢购名额</text>
+  </view>
+  <view class="installment-after">
+    <text class="installment-way">分期方式：尾款{{installmentScheme[curInstallmentSchemeIdx].finalPayment}}，月供{{installmentScheme[curInstallmentSchemeIdx].monthlyPayment}}*{{installmentScheme[curInstallmentSchemeIdx].months}}</text>
+  </view>
+</view>
+
+<view class="confirm">
+  <view class="confirm-total">
+    <text class="confirm-title">合计：</text>
+    <text class="confirm-amount">￥1.00</text>
+  </view>
+  <view class="confirm-btn" bindtap="pay">立即支付</view>
+</view>

@@ -1,0 +1,114 @@
+/**index.wxss**/
+
+.swiper-tab {
+  width: 100%;
+  border-bottom: 2rpx solid #777;
+  text-align: center;
+  line-height: 80rpx;
+}
+
+.swiper-tab-list {
+  font-size: 30rpx;
+  display: inline-block;
+  width: 25%;
+  color: #777;
+}
+
+.on {
+  color: #da7c0c;
+  border-bottom: 5rpx solid #da7c0c;
+}
+
+.swiper-box {
+  display: block;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.swiper-box view {
+  text-align: center;
+}
+
+.box {
+  z-index: 0;
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.img {
+  margin-left: 15rpx;
+  height: 520rpx;
+}
+
+.img2 {
+  height: 600rpx;
+  width: 600rpx;
+}
+
+.img3 {
+  margin-left: 15rpx;
+  height: 520rpx;
+}
+
+.box {
+  height: 340rpx;
+  z-index: 0;
+  margin: 50rpx 0;
+}
+
+.box .club {
+  height: 140rpx;
+  width: 140rpx;
+  position: relative;
+  display: inline-block;
+}
+
+.club image {
+  height: 140rpx;
+  width: 140rpx;
+}
+
+.club text {
+  display: block;
+  width: 100%;
+  font-size: 24rpx;
+  line-height: 40rpx;
+  text-align: center;
+}
+
+.box .club:nth-child(1) {
+  transform: scale(0.8, 0.8) translateX(-120rpx);
+  opacity: 0.2;
+  z-index: 10;
+}
+
+.box .club:nth-child(2) {
+  transform: scale(1, 1) translateX(-80rpx);
+  opacity: 0.5;
+  z-index: 100;
+}
+
+.box .club:nth-child(3) {
+  transform: scale(1.4, 1.4);
+  z-index: 1000;
+}
+
+.box .club:nth-child(4) {
+  transform: scale(1, 1) translateX(80rpx);
+  opacity: 0.5;
+  z-index: 100;
+}
+
+.box .club:nth-child(5) {
+  transform: scale(0.8, 0.8) translateX(120rpx);
+  opacity: 0.2;
+  z-index: 10;
+}
+
+.box .club:nth-child(1) text, .box .club:nth-child(2) text,
+.box .club:nth-child(4) text, .box .club:nth-child(5) text {
+  visibility: hidden;
+}

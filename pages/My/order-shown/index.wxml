@@ -1,0 +1,6 @@
+<!--pages/My/order-shown/index.wxml-->
+<view class="container">
+  <car-card order-item="{{carDetail}}"></car-card>
+  <comment-shown item-detail="{{comment}}"></comment-shown>
+  <view class="big-btn get-gift" bindtap="getGift">领取礼品</view>
+</view>

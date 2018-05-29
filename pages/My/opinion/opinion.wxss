@@ -1,0 +1,42 @@
+/* pages/My/opinion/opinion.wxss */
+page {
+  background-color: #F2F2F2;
+}
+
+.opinion-content {
+  width: 690rpx;
+  height: 400rpx;
+  position: relative;
+  background-color: #FFF;
+  border-radius: 10rpx;
+  margin-top: 20rpx;
+}
+
+.opinion-content textarea {
+  width: 650rpx;
+  height: 315rpx;
+  margin-left: 20rpx;
+  margin-top: 27rpx;
+  font-size: 24rpx;
+  color: #333;
+}
+
+.opinion-content view {
+  position: absolute;
+  right: 20rpx;
+  bottom: 25rpx;
+  font-size: 24rpx;
+  color: #333;
+}
+
+.opinion-tel {
+  width: 670rpx;
+  height: 90rpx;
+  margin-top: 40rpx;
+  margin-bottom: 52rpx;
+  background-color: #FFF;
+  font-size: 34rpx;
+  color: #333;
+  border-radius: 10rpx;
+  padding-left: 20rpx;
+}

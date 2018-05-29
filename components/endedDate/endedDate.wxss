@@ -1,0 +1,28 @@
+/* components/endedDate/endedDate.wxss */
+.enddate-container {
+  width: 750rpx;
+  height: 90rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top: 2rpx solid #F2F2F2;
+}
+
+.enddate-container image {
+  width: 29rpx;
+  height: 22rpx;
+}
+
+.enddate-container text {
+  margin: 0 23rpx;
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.split-line {
+  width: 700rpx;
+  height: 2rpx;
+  margin-left: 25rpx;
+  background-color: #F2F2F2;
+}

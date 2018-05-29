@@ -1,0 +1,17 @@
+<!--pages/paid/paid.wxml-->
+<view class="container">
+  <view class="paid-success">
+    <image src="/images/common/ok.png"></image>
+    <text style="font-size: 32rpx; margin-top: 33rpx;">付款成功</text>
+    <text style="font-size: 24rpx; margin-top: 19rpx;">请保持电话通畅，稍后会有工作人员与您联系！</text>
+  </view>
+  <view class="split"></view>
+  <car-card order-item="{{orderItem}}"></car-card>
+</view>
+
+<view class="opration">
+  <view class="go-home" bindtap="goHome">返回首页</view>
+  <view class="check-order" bindtap="checkOrder">查看订单</view>
+</view>
+<image class="service" src="/images/common/service.png"></image>
+<image class="topics" src="/images/common/topics.png"></image>

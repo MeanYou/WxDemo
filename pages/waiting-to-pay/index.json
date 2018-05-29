@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "订单详情",
+  "usingComponents": {
+    "subtitle": "/components/subtitle/subtitle",
+    "car-card": "/components/carCard/carCard",
+    "order-info": "/components/orderInfo/orderInfo"
+  }
+}

@@ -1,0 +1,129 @@
+/* components/voteItem/voteItem.wxss */
+.item-container {
+  width: 750rpx;
+  height: 310rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-img {
+  width: 230rpx;
+  height: 220rpx;
+  text-align: center;
+  position: relative;
+}
+
+.item-img image {
+  width: 230rpx;
+  height: 220rpx;
+}
+
+.img-title {
+  width: 108rpx;
+  height: 34rpx;
+  background: linear-gradient(to right, #FF8B3E, #E93F2C);
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 24rpx;
+  color: #FFF;
+}
+
+.item-desc {
+  position: relative;
+  width: 450rpx;
+  height: 230rpx;
+  margin-left: 20rpx;
+}
+
+.item-name {
+  font-size: 30rpx;
+  color: #111;
+  font-weight: bold;
+  height: 90rpx;
+}
+
+.progress-container {
+  width: 450rpx;
+  height: 50rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.progress-con {
+  width: 326rpx;
+  height: 18rpx;
+}
+
+.progress-back {
+  width: 326rpx;
+  height: 18rpx;
+  border: 1rpx solid #F35628;
+  border-radius: 9rpx;
+  position: absolute;
+}
+
+.progress-bar {
+  position: absolute;
+  width: 0;
+  height: 18rpx;
+  border-radius: 9rpx;
+  background: linear-gradient(to right, #FEAA59, #FF633E);
+}
+
+.progress-votes {
+  font-size: 22rpx;
+  color: #191615;
+}
+
+.money-container {
+  width: 450rpx;
+  height: 90rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.guide-price {
+  height: 40rpx;
+  line-height: 40rpx;
+  vertical-align: middle;
+  text-decoration: line-through;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.installment {
+  font-size: 26rpx;
+  color: #111111;
+  height: 50rpx;
+  line-height: 50rpx;
+  vertical-align: middle;
+}
+
+.vote-btn {
+  width: 140rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #F0421E;
+  border-radius: 5rpx;
+  font-size: 28rpx;
+  color: #FFF;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+
+}
+
+.split-line {
+  width: 700rpx;
+  height: 2rpx;
+  margin-left: 25rpx;
+  background-color: #F2F2F2;
+}
+

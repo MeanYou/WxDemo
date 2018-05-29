@@ -1,0 +1,52 @@
+{
+  "pages": [
+    "pages/miaosha/miaosha",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/home/home",
+    "pages/liaomei/liaomei",
+    "pages/item-detail/index",
+    "pages/item-config-detail/index",
+    "pages/store/store",
+    "pages/create-order/index",
+    "pages/confirm-order/index",
+    "pages/waiting-to-pay/index",
+    "pages/cancelled/cancelled",
+    "pages/paid/paid",
+    "pages/order-detail/index",
+    "pages/comment/comment",
+    "pages/next-activities/index",
+    "pages/prev-activities/index",
+    "pages/My/my-page/index",
+    "pages/My/login/login",
+    "pages/My/gift/gift",
+    "pages/My/my-order/index",
+    "pages/My/show-order/index",
+    "pages/My/order-shown/index",
+    "pages/My/get-gift/index",
+    "pages/My/opinion/opinion"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#FFF",
+    "navigationBarTitleText": "撩车",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/miaosha/miaosha",
+        "text": "秒杀"
+      },
+      {
+        "pagePath": "pages/liaomei/liaomei",
+        "text": "撩妹"
+      },
+      {
+        "pagePath": "pages/My/my-page/index",
+        "text": "我的"
+      }
+    ]
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "创建订单",
+  "usingComponents": {
+    "subtitle": "/components/subtitle/subtitle",
+    "car-card": "/components/carCard/carCard"
+  }
+}

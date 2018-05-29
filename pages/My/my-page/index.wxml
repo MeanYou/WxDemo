@@ -1,0 +1,53 @@
+<!--pages/My/my-page/index.wxml-->
+<view class="container">
+  <view class="login-reg" wx:if="{{!login}}">
+    <image class="background" src="./images/reg-back.png"></image>
+    <text class="welcome">Hi~ 等你好久了！</text>
+    <view class="login-reg-btn" bindtap="login">登录/注册</view>
+  </view>
+  <view class="userinfo" wx:if="{{login}}">
+    <image class="background" src="./images/login-back.png"></image>
+    <image class="avatar" src="{{userInfo.headImg}}"></image>
+    <view class="username">{{userInfo.name}}</view>
+  </view>
+  <view class="msg-gift">
+    <view class="flex-col">
+      <image src="./images/msg.png" style="width:48rpx;height:40rpx;"></image>
+      <text>圈子消息</text>
+    </view>
+    <view class="middle"></view>
+    <view class="flex-col">
+      <image src="./images/gift.png" style="width:45rpx;height:46rpx;"></image>
+      <text>我的礼品</text>
+    </view>
+  </view>
+  <view class="split"></view>
+  <view class="my-item" bindtap="checkOrder">
+    <view class="item-img-container"><image src="./images/order.png" style="width:36rpx;height:41rpx;"/></view>
+    <view class="item-container">
+      <view class="item-name">我的订单</view>
+      <image class="right" src="/images/common/right_black.png"></image>
+    </view>
+  </view>
+  <view class="my-item">
+    <view class="item-img-container"><image src="./images/claim.png" style="width:37rpx;height:32rpx;"/></view>
+    <view class="item-container">
+      <view class="item-name">我要理赔</view>
+      <image class="right" src="/images/common/right_black.png"></image>
+    </view>
+  </view>
+  <view class="my-item">
+    <view class="item-img-container"><image src="./images/rescue.png" style="width:40rpx;height:33rpx;"/></view>
+    <view class="item-container">
+      <view class="item-name">我要救援</view>
+      <image class="right" src="/images/common/right_black.png"></image>
+    </view>
+  </view>
+  <view class="my-item">
+    <view class="item-img-container"><image src="./images/opinion.png" style="width:37rpx;height:40rpx;"/></view>
+    <view class="item-container" bindtap="giveOpinion">
+      <view class="item-name">意见反馈</view>
+      <image class="right" src="/images/common/right_black.png"></image>
+    </view>
+  </view>
+</view>

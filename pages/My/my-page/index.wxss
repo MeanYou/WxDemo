@@ -1,0 +1,128 @@
+/* pages/My/my-page/index.wxss */
+.login-reg {
+  width: 750rpx;
+  height: 335rpx;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.background {
+  z-index: -100;
+  position: absolute;
+  width: 750rpx;
+  height: 335rpx;
+}
+
+.welcome {
+  margin-top: 100rpx;
+  font-size: 36rpx;
+  color: #FEFEFE;
+}
+
+.login-reg-btn {
+  width: 240rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  vertical-align: middle;
+  text-align: center;
+  margin-top: 86rpx;
+  border-radius: 33rpx;
+  background-color: #FECBA1;
+  font-size: 36rpx;
+  color: #333;
+}
+
+.userinfo {
+  width: 750rpx;
+  height: 335rpx;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+}
+
+.avatar {
+  width: 144rpx;
+  height: 144rpx;
+  border-radius: 72rpx;
+  margin-top: 90rpx;
+  margin-left: 90rpx;
+}
+
+.username {
+  font-size: 34rpx;
+  color: #333;
+  margin-top: 26rpx;
+  margin-left: 94rpx;
+}
+
+.msg-gift {
+  width: 750rpx;
+  height: 160rpx;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+}
+
+.flex-col {
+  width: 370rpx;
+  height: 160rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-col text {
+  font-size: 34rpx;
+  color: #333;
+  margin-top: 29rpx;
+}
+
+.middle {
+  width: 4rpx;
+  height: 78rpx;
+  margin-bottom: 17rpx;
+  background-color: #F2F2F2;
+}
+
+.my-item {
+  width: 750rpx;
+  height: 110rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-img-container {
+  width: 100rpx;
+  height: 110rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.item-container {
+  width: 650rpx;
+  height: 110rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 2rpx solid #F2F2F2;
+}
+
+.item-name {
+  margin-left: 5rpx;
+  font-size: 32rpx;
+  color: #333;
+}
+
+.right {
+  width: 14rpx;
+  height: 26rpx;
+  margin-right: 33rpx;
+}

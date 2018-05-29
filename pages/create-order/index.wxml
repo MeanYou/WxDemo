@@ -1,0 +1,67 @@
+<!--pages/create-order/index.wxml-->
+<view class="container">
+  <car-card order-item="{{orderItem}}"></car-card>
+  <view class="split"></view>
+  <view class="order-contact">
+    <subtitle>联系方式</subtitle>
+    <input type="text" data-type="name" placeholder="请输入姓名" value="{{userInfo.name}}" bindinput="inputChange" focus="{{focusName}}"></input>
+    <input type="number" data-type="tel" placeholder="请输入手机号" value="{{userInfo.tel}}" bindinput="inputChange" maxlength="11" focus="{{focusTel}}"></input>
+    <view class="clear-name-container" bindtap="clearName"><image src="/images/common/clear.png" class="clear-name" hidden="{{!userInfo.name}}" /></view>
+    <view class="clear-tel-container" bindtap="clearTel"><image src="/images/common/clear.png" class="clear-tel" hidden="{{!userInfo.tel}}" /></view>
+  </view>
+  <view class="split"></view>
+  <view class="installment-scheme">
+    <view class="installment-title">
+      <text class="installment-title-one" decode="true">选择分期方案</text>
+      <text class="installment-title-include" decode="true"> 首年首付{{installmentFirstYear.downPayment}}元，月供{{installmentFirstYear.monthlySupply}}元*{{installmentFirstYear.months}}期</text>
+    </view>
+    <view class="installment-table" bindtap="showInstallment">
+      <text class="installment-name">尾款</text>
+      <text class="installment-name">月付</text>
+      <text class="installment-name">期数</text>
+      <text class="installment-value">{{installmentScheme[curInstallmentSchemeIdx].finalPayment}}</text>
+      <text class="installment-value">{{installmentScheme[curInstallmentSchemeIdx].monthlyPayment}}</text>
+      <text class="installment-value">{{installmentScheme[curInstallmentSchemeIdx].months}}</text>
+      <image src="/images/common/right-orange.png"></image>
+    </view>
+  </view>
+  <view class="split"></view>
+  <view class="buy-store">
+    <subtitle>购车门店</subtitle>
+    <view class="store">
+      <view class="store-container" bindtap="showStore">
+        <view class="store-name">
+          <view class="self-support">
+            <image src="./images/self-support.png"></image>
+            <text>自营门店</text>
+          </view>
+          <text class="store-n">{{curStore.name}}</text>
+        </view>
+        <view class="store-position">
+          <text>{{curStore.location}}</text>
+        </view>
+        <image class="right" src="./images/right.png"></image>
+      </view>
+    </view>
+  </view>
+  <view class="split"></view>
+  <view class="finish" bindtap="confirmOrder">提交订单</view>
+</view>
+
+<view class="popup-container" wx:if="{{showInstallmentDetail}}" bindtap="hideInstallment"></view>
+<view class="installment-detail" wx:if="{{showInstallmentDetail}}" animation="{{animationData}}">
+  <view class="">
+    <view class="instalment-title">全部分期方案</view>
+    <view class="installment-first-year">
+      <text class="installment-name">首付</text>
+      <text class="installment-name">月付</text>
+      <text class="installment-name">期数</text>
+      <text class="installment-value">{{installmentScheme[curInstallmentSchemeIdx].finalPayment}}</text>
+      <text class="installment-value">{{installmentScheme[curInstallmentSchemeIdx].monthlyPayment}}</text>
+      <text class="installment-value">{{installmentScheme[curInstallmentSchemeIdx].months}}</text>
+    </view>
+    <view class="installment-months-title">期数</view>
+    <view wx:for="{{installmentScheme}}" wx:key="unique" data-index="{{index}}" class="installment-months{{curInstallmentSchemeIdx === index ? ' installment-months-this' : ''}}" bindtap="selectInstallmentScheme">{{item.months}}</view>
+    <view class="finish" bindtap="hideInstallment">确认</view>
+  </view>
+</view>

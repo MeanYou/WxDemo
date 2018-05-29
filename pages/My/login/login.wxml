@@ -1,0 +1,19 @@
+<!--pages/My/login/login.wxml-->
+<view class="container">
+  <view class="input-container">
+    <input class="tel" value="{{form.tel}}" type="number" data-name="tel" bindinput="inputChange" maxlength="11" focus="{{focusTel}}" placeholder="请输入手机号"></input>
+    <image class="clear" bindtap="clearTel" src="/images/common/clear.png"></image>
+  </view>
+  <view class="input-container">
+    <input class="verify" value="{{form.verifyCode}}" type="number" data-name="verifyCode" bindinput="inputChange" maxlength="8" focus="{{focusVerify}}" placeholder="请输入短信验证码"></input>
+    <view wx:if="{{canSend}}" class="get-verifycode" style="background-color:{{matchReg?'#FE512E':'#CCC'}};" bindtap="sendMsg">获取验证码</view>
+    <view wx:if="{{!canSend}}" class="get-verifycode-again" style="background-color:#CCC;">{{leftMinutes}}分钟后可再次发送</view>
+  </view>
+  <view class="accept">
+    <checkbox-group bindchange="checkChange">
+      <checkbox checked="{{accept}}"/>
+    </checkbox-group>
+    <view class="protocal">我已阅读并同意<text>“用户协议”</text>和<text>“隐私政策”</text></view>
+  </view>
+  <view class="submit" bindtap="submit" style="">确定</view>
+</view>

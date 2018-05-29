@@ -1,0 +1,86 @@
+/* pages/My/login/login.wxss */
+.input-container {
+  width: 662rpx;
+  height: 90rpx;
+  border-radius: 10rpx;
+  background-color: #F2F2F2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 36rpx;
+  font-size: 30rpx;
+}
+
+.tel, .verify {
+  width: 400rpx;
+  height: 60rpx;
+  margin-left: 26rpx;
+}
+
+.clear {
+  width: 27rpx;
+  height: 27rpx;
+  margin-right: 22rpx;
+}
+
+.get-verifycode {
+  width: 160rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #ccc;
+  border-radius: 8rpx;
+  color: #FFF;
+  font-size: 26rpx;
+  margin-right: 19rpx;
+}
+
+.get-verifycode-again {
+  width: 280rpx;
+  height: 55rpx;
+  line-height: 55rpx;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #ccc;
+  border-radius: 8rpx;
+  color: #FFF;
+  font-size: 26rpx;
+  margin-right: 19rpx;
+}
+
+.accept {
+  width: 662rpx;
+  height: 140rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+/* .accept checkbox {
+  width: 30rpx;
+  height: 30rpx;
+} */
+
+.protocal {
+  font-size: 24rpx;
+  color: #666;
+  margin-left: 17rpx;
+}
+
+.protocal text {
+  color: #FE512E;
+}
+
+.submit {
+  width: 662rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  vertical-align: middle;
+  text-align: center;
+  background-color: #FE512E;
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #FFF;
+  border-radius: 10rpx;
+}

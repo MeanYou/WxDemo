@@ -1,0 +1,2 @@
+<!--components/tab/tab.wxml-->
+<navigator url="/page/index/index" open-type="switchTab" hover-class="other-navigator-hover">切换 Tab</navigator>

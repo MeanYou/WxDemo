@@ -1,0 +1,28 @@
+<!--pages/My/show-order/index.wxml-->
+<view class="container">
+  <view class="split-line"></view>
+  <view class="order-star">
+    <image class="order-img" src="{{orderInfo.img}}"></image>
+    <view class="choose-star">
+      <text style="font-size:30rpx;color:#333;">车型评分</text>
+      <view class="order-stars">
+        <image class="single-star" wx:for="{{stars}}" wx:key="unique" data-index="{{item}}" bindtap="changeLevel" src="/images/common/{{item<=level?'star-y.png':'star-n.png'}}"></image>
+      </view>
+    </view>
+  </view>
+  <textarea class="comment" data-name="comment" value="{{comment}}" bindinput="changeComment" placeholder="聊聊这次交易您的感受"></textarea>
+  <view class="pics">
+    <image src="/images/common/add-photo.png"></image>
+    <image src="/images/common/add-photo.png"></image>
+    <image src="/images/common/add-photo.png"></image>
+    <image src="/images/common/add-photo.png"></image>
+    <image src="/images/common/add-photo.png"></image>
+  </view>
+  <view class="tip">请添加提车图片，以供工作人员审核，照片需展示出妙优车<text style="color:#FF3E3E">门店+提车</text>照片</view>
+  <view class="split-line" style="width:690rpx;"></view>
+  <view class="if-hide" bindtap="toggleHidePic">
+    <image src="./images/{{hidePic?'checked.png':'not_checked.png'}}"></image>
+    <text>发表后隐藏图片</text>
+  </view>
+  <view class="big-btn submit-comment" bindtap="submit">发表评论</view>
+</view>

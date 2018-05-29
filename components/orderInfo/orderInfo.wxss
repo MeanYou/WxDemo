@@ -1,0 +1,53 @@
+/* components/orderInfo/orderInfo.wxss */
+.order-background {
+  width: 750rpx;
+  height: 173rpx;
+  position: relative;
+  background-color: #FFF;
+}
+
+.order-container {
+  width: 690rpx;
+  height: 230rpx;
+  position: absolute;
+  bottom: 20rpx;
+  left: 30rpx;
+  background-color: #FFF;
+  border-radius: 10rpx;
+  box-shadow: 0 5px 10px #FFF6F4;
+}
+
+.user-info {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin-top: 60rpx;
+}
+
+.user-info image {
+  margin-left: 31rpx;
+  width: 23rpx;
+  height: 30rpx;
+}
+
+.username {
+  margin-left: 19rpx;
+  font-size: 30rpx;
+  color: #333;
+}
+
+.tel {
+  margin-left: 35rpx;
+  font-size: 30rpx;
+  color: #323232;
+}
+
+.store {
+  width: 590rpx;
+  height: 100rpx;
+  line-height: 33rpx;
+  margin-top: 30rpx;
+  margin-left: 70rpx;
+  font-size: 26rpx;
+  color: #333;
+}

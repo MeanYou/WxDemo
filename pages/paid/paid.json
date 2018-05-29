@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "支付成功",
+  "usingComponents": {
+    "subtitle": "/components/subtitle/subtitle",
+    "car-card": "/components/carCard/carCard"
+  }
+}

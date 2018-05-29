@@ -1,0 +1,110 @@
+/* components/commentShown/commentShown.wxss */
+.comment {
+  width: 750rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.top {
+  width: 750rpx;
+  height: 80rpx;
+  margin-top: 50rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.userinfo {
+  width: 250rpx;
+  height: 80rpx;
+  margin-left: 32rpx;
+  position: relative;
+}
+
+.avatar {
+  width: 70rpx;
+  height: 70rpx;
+  border-radius: 35rpx;
+  position: absolute;
+  top: 5rpx;
+  left: 0;
+}
+
+.username {
+  position: absolute;
+  top: 14rpx;
+  left: 85rpx;
+  font-size: 28rpx;
+  color: #111;
+}
+
+.level {
+  position: absolute;
+  bottom: 0rpx;
+  left: 85rpx;
+  font-size: 22rpx;
+}
+
+.stars {
+  color: #F0421E;
+}
+
+.unstarts {
+  color: #D9D9D9;
+}
+
+.succeed {
+  font-size: 30rpx;
+  color: #F0421E;
+  margin-right: 36rpx;
+}
+
+.date {
+  margin-right: 32rpx;
+  font-size: 24rpx;
+  color: #999;
+}
+
+.middle {
+  width: 620rpx;
+  line-height: 40rpx;
+  margin-top: 40rpx;
+  font-size: 28rpx;
+  color: #111;
+}
+
+.pics {
+  width: 620rpx;
+  height: 120rpx;
+  margin-top: 40rpx;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.pics image {
+  width: 112rpx;
+  height: 112rpx;
+  margin-right: 16rpx;
+}
+
+.bottom {
+  width: 620rpx;
+  height: 30rpx;
+  margin-top: 40rpx;
+  margin-bottom: 40rpx;
+  font-size: 24rpx;
+  color: #999;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.split-line {
+  width: 700rpx;
+  height: 2rpx;
+  margin-left: 25rpx;
+  background-color: #F2F2F2;
+}

@@ -1,0 +1,19 @@
+<!--components/commentItem/commentItem.wxml-->
+<view class="comment">
+  <view class="top">
+    <view class="userinfo">
+      <image class="avatar" src="{{itemDetail.avatar}}"></image>
+      <text class="username">{{itemDetail.username}}</text>
+      <view class="level">
+        <text class="stars">{{stars}}</text><text class="unstars">{{unstars}}</text>
+      </view>
+    </view>
+    <view class="date">{{itemDetail.date}}</view>
+  </view>
+  <view class="middle">{{itemDetail.content}}</view>
+  <view class="pics" wx:if="{{!!itemDetail.pics}}">
+    <image wx:for="{{itemDetail.pics}}" wx:key="unique" src="{{item}}"></image>
+  </view>
+  <view class="bottom">车型：{{itemDetail.carType}}</view>
+</view>
+<view class="split-line"></view>

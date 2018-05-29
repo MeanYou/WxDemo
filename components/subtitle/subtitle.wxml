@@ -1,0 +1,6 @@
+<!--components/subtitle/subtitle.wxml-->
+<view class="subtitle">
+  <text>
+    <slot></slot>
+  </text>
+</view>

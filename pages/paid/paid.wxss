@@ -1,0 +1,72 @@
+/* pages/paid/paid.wxss */
+page {
+  background-color: #F5F5FA;
+}
+
+.paid-success {
+  background-color: #FFF;
+  width: 750rpx;
+  height: 496rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.paid-success image {
+  width: 70rpx;
+  height: 70rpx;
+  margin-top: 20rpx;
+}
+
+.paid-success text {
+  color: #111;
+}
+
+.opration {
+  position: fixed;
+  bottom: 0;
+  width: 750rpx;
+  height: 98rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.go-home {
+  width: 375rpx;
+  height: 98rpx;
+  line-height: 98rpx;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 32rpx;
+  color: #FFF;
+  background-color: #FD9244;
+}
+
+.check-order {
+  width: 375rpx;
+  height: 98rpx;
+  line-height: 98rpx;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 32rpx;
+  color: #FFF;
+  background-color: #F0421E;
+}
+
+.service {
+  width: 103rpx;
+  height: 103rpx;
+  position: fixed;
+  right: 23rpx;
+  bottom: 300rpx;
+}
+
+.topics {
+  width: 103rpx;
+  height: 103rpx;
+  position: fixed;
+  right: 23rpx;
+  bottom: 182rpx;
+}

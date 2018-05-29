@@ -1,0 +1,25 @@
+/* pages/item-config-detail/index.wxss */
+.title {
+  width: 750rpx;
+  height: 90rpx;
+  font-size: 28rpx;
+  font-weight: normal;
+  color: #111;
+  background-color: #F5F5FA;
+}
+
+.title view {
+  height: 90rpx;
+  line-height: 90rpx;
+  vertical-align: middle;
+}
+
+.left {
+  float: left;
+  margin-left: 35rpx;
+}
+
+.right {
+  float: right;
+  margin-right: 35rpx;
+}

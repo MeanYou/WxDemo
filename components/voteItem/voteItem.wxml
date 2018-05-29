@@ -1,0 +1,27 @@
+<!--components/voteItem/voteItem.wxml-->
+<view class="item-container">
+  <view class="item-img">
+    <image src="{{itemDetail.img}}"></image>
+    <view class="img-title">限时秒杀</view>
+  </view>
+  <view class="item-desc">
+    <view class="item-name">
+      <text>{{itemDetail.name}}</text>
+    </view>
+    <view class="progress-container">
+      <view class="progress-con">
+        <view class="progress-back"></view>
+        <view class="progress-bar" style="width:{{326 * (itemDetail.vote / itemDetail.voteTotal)}}rpx"></view>
+      </view>
+      <view class="progress-votes">
+        <text>已投{{itemDetail.vote}}</text>
+      </view>
+    </view>
+    <view class="money-container">
+      <view class="guide-price">厂商指导价：{{itemDetail.guidePrice}}元</view>
+      <view class="installment">首付{{itemDetail.installment.downPayment}}元 月供{{itemDetail.installment.monthlySupply}}*{{itemDetail.installment.months}}期</view>
+    </view>
+    <view class="vote-btn" data-id="{{itemDetail.id}}" bindtap="vote">我要投票</view>
+  </view>
+</view>
+<view class="split-line"></view>

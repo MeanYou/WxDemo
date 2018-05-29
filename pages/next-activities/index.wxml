@@ -1,0 +1,12 @@
+<!--pages/next-activities/index.wxml-->
+<view class="container">
+  <image class="activity-img" src="{{imgUrl}}"></image>
+  <view class="countdown">
+    <image src="/images/common/dec.png"></image>
+    <text class="count-text">本场距开始</text>
+    <countdown end-date="{{endDate}}"/>
+    <image src="/images/common/dec.png"></image>
+  </view>
+  <view class="split-line"></view>
+  <vote-item wx:for="{{voteItems}}" wx:key="id" item-detail="{{item}}" />
+</view>

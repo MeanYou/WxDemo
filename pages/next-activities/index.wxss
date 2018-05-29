@@ -1,0 +1,32 @@
+/* pages/next-activities/index.wxss */
+.activity-img {
+  width: 750rpx;
+  height: 272rpx;
+}
+
+.countdown {
+  width: 750rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.countdown image {
+  width: 29rpx;
+  height: 22rpx;
+  margin: 0 20rpx;
+}
+
+.count-text {
+  font-size: 30rpx;
+  color: #333;
+  font-weight: bold;
+}
+
+.split-line {
+  width: 750rpx;
+  height: 2rpx;
+  background-color: #EBEBEB;
+}
+

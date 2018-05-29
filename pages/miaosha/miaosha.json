@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "秒杀",
+  "usingComponents": {
+    "subtitle": "/components/subtitle/subtitle",
+    "miaosha-item": "/components/miaoshaItem/miaoshaItem"
+  }
+}

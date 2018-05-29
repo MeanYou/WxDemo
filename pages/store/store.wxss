@@ -1,0 +1,96 @@
+/* pages/store/store.wxss */
+.title {
+  width: 750rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  vertical-align: middle;
+  border-bottom: 2rpx solid #F2F2F2;
+}
+
+.title image {
+  width: 24rpx;
+  height: 14rpx;
+}
+
+.left {
+  float: left;
+  margin-left: 28rpx;
+  font-size: 30rpx;
+  color: #323232;
+}
+
+.right {
+  float: right;
+  margin-right: 22rpx;
+  font-size: 30rpx;
+  color: #666;
+}
+
+.store-container {
+  position: relative;
+  width: 750rpx;
+  height: 180rpx;
+  border-bottom: 2rpx solid #F2F2F2;
+}
+
+.store-title {
+  position: absolute;
+  top: 37rpx;
+  left: 27rpx;
+  width: 500rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  vertical-align: middle;
+}
+
+.self-support {
+  width: 116rpx;
+  height: 32rpx;
+  line-height: 32rpx;
+  text-align: center;
+  vertical-align: middle;
+  color: #FFF;
+  font-size: 22rpx;
+  display: inline-block;
+  background-image: url(data:image/png;base64,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);
+  background-size: 100% 100%;
+}
+
+.store-name {
+  font-size: 28rpx;
+  color: #333;
+  height: 40rpx;
+  line-height: 40rpx;
+  vertical-align: middle;
+  display: inline-block;
+  margin-left: 15rpx;
+}
+
+.store-position {
+  font-size: 24rpx;
+  color: #666;
+  position: absolute;
+  left: 27rpx;
+  top: 90rpx;
+  width: 568rpx;
+  height: 60rpx;
+}
+
+.store-distance {
+  width: 120rpx;
+  height: 180rpx;
+  font-size: 24rpx;
+  color: #666;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 10rpx;
+}
+
+.store-distance image {
+  width: 23rpx;
+  height: 31rpx;
+}

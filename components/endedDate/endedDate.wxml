@@ -1,0 +1,7 @@
+<!--components/endedDate/endedDate.wxml-->
+<view class="enddate-container">
+  <image src="/images/common/dec.png"/>
+  <text>活动时间： {{date.from}}-{{date.to}}</text>
+  <image src="/images/common/dec.png"/>
+</view>
+<view class="split-line"></view>

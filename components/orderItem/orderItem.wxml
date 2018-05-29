@@ -1,0 +1,33 @@
+<!--components/orderItem/orderItem.wxml-->
+<view class="order-item">
+  <view class="order-title">
+    <view>
+      <text class="order-id-name">订单编号：</text>
+      <text class="order-id-value">{{itemDetail.id}}</text>
+    </view>
+    <text class="order-status">{{itemDetail.status}}</text>
+  </view>
+  <view class="order-content">
+    <image class="order-img" src="{{itemDetail.img}}"></image>
+    <view class="order-text">
+      <text class="order-name">{{itemDetail.name}}</text>
+      <view class="order-money">
+        <text class="order-many">数量：{{itemDetail.count}}</text>
+        <view class="order-much">
+          <text style="font-size:26rpx;color:#333;">金额：</text>
+          <text style="font-size:36rpx;color:#FD502C;">￥{{itemDetail.price}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view wx:if="{{itemDetail.status=='交易成功'}}" class="order-opration">
+    <view class="btn-orange" bindtap="showOrder">晒单有礼</view>
+  </view>
+  <view wx:if="{{itemDetail.status=='待付款'}}" class="order-opration">
+    <view class="btn-white">取消订单</view>
+    <view class="btn-orange">付款 {{timeLeft}}</view>
+  </view>
+  <view wx:if="{{itemDetail.status=='已取消'}}" class="order-opration">
+    <view class="btn-orange">删除订单</view>
+  </view>
+</view>

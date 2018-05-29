@@ -1,0 +1,11 @@
+<!--pages/prev-activities/index.wxml-->
+<view class="container" wx:if="{{!!endedItems}}">
+  <ended-date date="{{endedDate}}"></ended-date>
+  <ended-item wx:for="{{endedItems}}" wx:key="id" item-detail="{{item}}" />
+</view>
+<view class="no-container" wx:if="{{!endedItems}}">
+  <view>
+    <image class="no-activity-img" src="/images/common/no-activity.png"></image>
+  </view>
+  <text class="no-activity">暂无往期活动</text>
+</view>

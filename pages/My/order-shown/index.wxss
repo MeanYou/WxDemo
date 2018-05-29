@@ -1,0 +1,5 @@
+/* pages/My/order-shown/index.wxss */
+.get-gift {
+  position: fixed;
+  bottom: 40rpx;
+}

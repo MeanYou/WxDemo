@@ -1,0 +1,24 @@
+<!--pages/item-config-detail/index.wxml-->
+<view class="container">
+  <block wx:for="{{configData}}" wx:for-item="config" wx:key="unique">
+    <view>
+      <view class="title">
+        <view class="left">{{config.name}}</view>
+        <view class="right">- 无</view>
+        <view class="right">● 标配</view>
+      </view>
+      <view class="table">
+        <block wx:for="{{config.value}}" wx:for-item="detail" wx:key="{{unique}}">
+          <view class="tr">
+            <view class="td">{{detail.name}}</view>
+            <view class="td">{{detail.value}}</view>
+          </view>
+        </block>
+      </view>
+    </view>
+  </block>
+  <view class="car-body">
+    <view class="title"></view>
+    <view class="table"></view>
+  </view>
+</view>

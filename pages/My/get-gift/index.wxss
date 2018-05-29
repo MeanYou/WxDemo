@@ -1,0 +1,84 @@
+/* pages/My/get-gift/index.wxss */
+.form-item-input {
+  width: 750rpx;
+  height: 90rpx;
+  border-bottom: 2rpx solid #F2F2F2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form-key {
+  font-size: 30rpx;
+  color: #333;
+  width: 150rpx;
+  margin-left: 33rpx;
+}
+
+.form-value {
+  font-size: 28rpx;
+  color: #333;
+  width: 500rpx;
+  height: 90rpx;
+}
+
+.form-item-picker {
+  width: 750rpx;
+  height: 90rpx;
+  border-bottom: 2rpx solid #F2F2F2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.picker-container {
+  height: 90rpx;
+  border-bottom: 2rpx solid #F2F2F2;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.form-item-picker image {
+  width: 14rpx;
+  height: 26rpx;
+  margin-right: 30rpx;
+}
+
+.form-item-area {
+  width: 750rpx;
+  height: 170rpx;
+  border-bottom: 2rpx solid #F2F2F2;
+  vertical-align: top;
+}
+
+.form-key-area {
+  display: inline-block;
+  width: 150rpx;
+  margin-top: 31rpx;
+  margin-left: 34rpx;
+  font-size: 30rpx;
+  color: #333;
+  vertical-align: top;
+}
+
+.form-value-area {
+  display: inline-block;
+  margin-top: 36rpx;
+  width: 500rpx;
+  height: 120rpx;
+  font-size: 28rpx;
+  color: #333;
+}
+
+.submit-addr {
+  margin-top: 74rpx;
+}
+
+.submit-tip {
+  font-size: 24rpx;
+  color: #333;
+  margin-top: 34rpx;
+  width: 750rpx;
+  text-align: center;
+}

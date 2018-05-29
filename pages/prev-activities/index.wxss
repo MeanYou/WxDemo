@@ -1,0 +1,21 @@
+/* pages/prev-activities/index.wxss */
+.no-container {
+  width: 750rpx;
+  height: 600rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.no-activity-img {
+  width: 251rpx;
+  height: 234rpx;
+  margin-top: 179rpx;
+}
+
+.no-activity {
+  font-size: 30rpx;
+  color: #666;
+  margin-top: 79rpx;
+}

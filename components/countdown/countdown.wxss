@@ -1,0 +1,27 @@
+/* components/countdown/countdown.wxss */
+.countdown-container {
+  width: 330rpx;
+  height: 40rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F5F8FC;
+  border-radius: 10rpx;
+}
+
+.count-number {
+  width: 50rpx;
+  height: 34rpx;
+  line-height: 34rpx;
+  text-align: center;
+  vertical-align: middle;
+  font-size: 30rpx;
+  color: #FFF;
+  margin: 0 6rpx;
+  background-color: #F0421E;
+}
+
+.countdown-container text {
+  font-size: 30rpx;
+  color: #A4A4A4;
+}

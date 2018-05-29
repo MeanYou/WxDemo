@@ -1,0 +1,10 @@
+<!--pages/comment/comment.wxml-->
+<view class="container">
+  <comment-item wx:for="{{commentItems}}" wx:key="id" item-detail="{{item}}"/>
+</view>
+<view class="no-container" wx:if="{{!commentItems}}">
+  <view>
+    <image class="no-comment-img" src="/images/common/no-comment.png"></image>
+  </view>
+  <text class="no-comment">暂无评价</text>
+</view>

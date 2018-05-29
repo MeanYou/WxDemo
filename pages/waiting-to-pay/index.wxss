@@ -1,0 +1,149 @@
+/* pages/waiting-to-pay/index.wxss */
+page {
+  background-color: #F5F6FA;
+}
+
+.wait-title {
+  width: 750rpx;
+  height: 227rpx;
+  position: relative;
+  background-color: #FFF;
+}
+
+.order-back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 750rpx;
+  height: 227rpx;
+}
+
+.waiting {
+  position: absolute;
+  top: 45rpx;
+  left: 48rpx;
+  width: 36rpx;
+  height: 36rpx;
+}
+
+.waiting-to-pay {
+  position: absolute;
+  top: 40rpx;
+  left: 99rpx;
+  font-size: 36rpx;
+  color: #FFF;
+}
+
+.time-left {
+  position: absolute;
+  top: 43rpx;
+  right: 61rpx;
+  font-size: 28rpx;
+  color: #FFF;
+}
+
+.need-to-pay {
+  position: absolute;
+  top: 87rpx;
+  right: 61rpx;
+  font-size: 24rpx;
+  color: #FFF;
+}
+
+.installment-first-year {
+  background-color: #FFF;
+  width: 750rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin: 0 28rpx;
+  border-top: 1rpx solid #F2F2F2;
+}
+
+.installment-after {
+  background-color: #FFF;
+  width: 750rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin: 0 28rpx;
+  border-top: 1rpx solid #F2F2F2;
+}
+
+.pay-way {
+  font-size: 28rpx;
+  color: #111;
+  margin-left: 28rpx;
+}
+
+.downpayment-detail {
+  font-size: 24rpx;
+  color: #666;
+  margin-left: 10rpx;
+}
+
+.installment-way {
+  font-size: 28rpx;
+  color: #111;
+  margin-left: 28rpx;
+}
+
+.order-info {
+  width: 750rpx;
+  height: 160rpx;
+  border-bottom: 1rpx solid #F2F2F2;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20rpx 28rpx;
+  font-size: 28rpx;
+  color: #111;
+  background-color: #FFF;
+}
+
+.order-money {
+  width: 750rpx;
+  height: 120rpx;
+  border-bottom: 1rpx solid #F2F2F2;
+  display: flex;
+  justify-content: flex-end;
+  align-items: baseline;
+  background-color: #FFF;
+}
+
+.order-opration {
+  width: 750rpx;
+  height: 98rpx;
+  border-top: 1rpx solid #F2F2F2;
+  position: fixed;
+  bottom: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: #FFF;
+}
+
+.order-cancel {
+  width: 156rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 30rpx;
+  color: #323232;
+  border: 3rpx solid #323232;
+  border-radius: 5rpx;
+  margin-right: 25rpx;
+}
+
+.order-pay {
+  width: 156rpx;
+  height: 66rpx;
+  line-height: 66rpx;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 30rpx;
+  color: #F0421E;
+  border: 3rpx solid #F0421E;
+  border-radius: 5rpx;
+  margin-right: 25rpx;
+}

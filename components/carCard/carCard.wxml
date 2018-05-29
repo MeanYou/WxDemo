@@ -1,0 +1,11 @@
+<!--components/carCard/carCard.wxml-->
+<view class="order-title">
+    <image class="title-img" src="{{orderItem.url}}"></image>
+    <view class="title-name">
+      <text>{{orderItem.name}}</text>
+    </view>
+    <view class="title-money">
+      <view class="money-much">{{orderItem.much}}</view>
+      <view class="money-many">{{orderItem.many}}</view>
+    </view>
+  </view>

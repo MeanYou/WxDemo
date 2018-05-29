@@ -1,0 +1,172 @@
+<!--pages/item-detail/index.wxml-->
+<scroll-view scroll-y scroll-with-animation="true" class="container">
+  <view class="img">
+    <swiper class="img-box" autoplay="{{false}}" bindchange="swipeImg">
+      <block wx:for="{{imgs}}" wx:key="unique">
+        <swiper-item>
+          <image src="{{item}}_m" />
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class="headline">
+      <swiper wx:if="{{noticeList}}" class="headline-swiper" vertical="true" autoplay="true" circular="true" interval="3000">
+        <block wx:for-items="{{noticeList.dataList}}" wx:key="id">
+          <swiper-item>
+            <view class="headline-content">
+              <image src="{{item.img}}"></image>
+              <text class="content">{{item.title}}</text>
+              <text class="time" decode="true">{{item.dateAdd}}</text>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    <view class="current-img">{{curImg}}/{{imgs.length}}</view>
+  </view>
+  <view class="countdown">
+    <image src="./images/bg-countdown.png" />
+    <view class="full-price">全款仅需{{detail.fullPrice/10000}}万元</view>
+    <view class="countdown-right">
+      <text class="countdown-top">距本场结束仅剩</text>
+      <view class="countdown-bottom">
+        <text class="number">{{endDateDetail.day}}</text>
+        <text>天</text>
+        <text class="number">{{endDateDetail.hour}}</text>
+        <text>时</text>
+        <text class="number">{{endDateDetail.minute}}</text>
+        <text>分</text>
+        <text class="number">{{endDateDetail.second}}</text>
+        <text>秒</text>
+      </view>
+    </view>
+  </view>
+  <view class="name">
+    <text>{{detail.name}}</text>
+  </view>
+  <view class="guide-price">厂商指导价：{{detail.guidePrice/10000}}万元</view>
+  <view class="progress">
+    <view class="progress-container">
+      <view class="full-bar"></view>
+      <view class="progress-bar" style="width: {{progressWidth}}rpx"></view>
+    </view>
+    <view class="progress-text">
+      <text>{{progress.present}}人已参团 </text>
+      <image src="./images/fire.png"></image>
+      <text style="float: right; padding-right: 35rpx;">{{progressPercent}}</text>
+    </view>
+  </view>
+  <view class="note">
+    <image src="./images/notice.png"></image>
+    <text>{{note}}</text>
+  </view>
+  <view class="activity" bindtap="showActivity">
+    <view class="activity-title">活动</view>
+    <view class="activity-tag-container">
+      <text wx:for="{{activityList}}" wx:key="id" class="activity-tag">{{item.tag}}</text>
+    </view>
+    <view class="activity-content-container">
+      <view wx:for="{{activityList}}" wx:key="id" class="activity-content">{{item.content}}</view>
+    </view>
+  </view>
+  <view class="split"></view>
+  <view class="installment">
+    <view class="installment-title">
+      <text class="installment-title-one" decode="true">先用1年</text>
+      <text class="installment-title-include" decode="true">含购置税 送1年保险</text>
+    </view>
+    <view class="installment-first-year">
+      <text class="installment-name">首付</text>
+      <text class="installment-name">月付</text>
+      <text class="installment-name">期数</text>
+      <text class="installment-value">{{installment.firstYear.downPayment}}元</text>
+      <text class="installment-value">{{installment.firstYear.monthlySupply}}元</text>
+      <text class="installment-value">{{installment.firstYear.months}}月</text>
+    </view>
+    <view class="sub-split"></view>
+    <view class="installment-after" bindtap="showInstallment">
+      <view class="installment-after-title">1年后</view>
+      <view class="installment-after-content">尾款购车63300元 （支持分期 2012*36期）</view>
+      <image src="./images/right.png"></image>
+    </view>
+  </view>
+  <subtitle>购车门店</subtitle>
+  <view class="store">
+    <view class="store-container" bindtap="showStore">
+      <view class="store-name">
+        <view class="self-support">
+          <image src="./images/self-support.png"></image>
+          <text>自营门店</text>
+        </view>
+        <text class="store-n">{{curStore.name}}</text>
+      </view>
+      <view class="store-position">
+        <text>{{curStore.location}}</text>
+      </view>
+      <image class="right" src="./images/right.png"></image>
+    </view>
+  </view>
+  <subtitle>轻松四步 开走新车</subtitle>
+  <view class="steps">
+    <image src="./images/steps.png"></image>
+  </view>
+  <subtitle>车辆亮点</subtitle>
+  <view class="advantage">
+    <image src="{{advantage.img}}"></image>
+    <view>{{advantage.des}}</view>
+  </view>
+  <subtitle>车辆配置</subtitle>
+  <view class="config">
+    <image src=""></image>
+  </view>
+  <view class="config-button" bindtap="checkConfigDetail">查看详细配置</view>
+</scroll-view>
+<view class="nav">
+  <view class="nav-item">
+    <image src="./images/service.png"></image>
+    <text>客服</text>
+  </view>
+  <view class="buy-btn" bindtap="createOrder">一元抢购</view>
+</view>
+<image class="gotop" bindtap="gotop" src="./images/top.png"></image>
+
+<view class="popup-container" wx:if="{{showActivityDetail}}" bindtap="hideActivity"></view>
+<view class="activity-detail" wx:if="{{showActivityDetail}}" animation="{{animationData}}">
+  <view class="table">
+    <block wx:for="{{activityList}}" wx:key="id">
+      <view class="tr1">
+        <view class="td1">
+          <text class="activity-tag">{{item.tag}}</text>
+        </view>
+        <view class="td2">
+          <text>{{item.content}}</text>
+        </view>
+      </view>
+      <view class="tr2" wx:if="{{!!item.date}}">
+        <view class="td1">
+        </view>
+        <view class="td2">
+          <text>{{item.date}}</text>
+        </view>
+      </view>
+    </block>
+    <view class="finish" bindtap="hideActivity">完成</view>
+  </view>
+</view>
+
+<view class="popup-container" wx:if="{{showInstallmentDetail}}" bindtap="hideInstallment"></view>
+<view class="activity-detail" wx:if="{{showInstallmentDetail}}" animation="{{animationData}}">
+  <view class="">
+    <view class="instalment-title">全部分期方案</view>
+    <view class="installment-first-year">
+      <text class="installment-name">首付</text>
+      <text class="installment-name">月付</text>
+      <text class="installment-name">期数</text>
+      <text class="installment-value">{{installmentScheme[curInstallmentSchemeIdx].finalPayment}}</text>
+      <text class="installment-value">{{installmentScheme[curInstallmentSchemeIdx].monthlyPayment}}</text>
+      <text class="installment-value">{{installmentScheme[curInstallmentSchemeIdx].months}}</text>
+    </view>
+    <view class="installment-months-title">期数</view>
+    <view wx:for="{{installmentScheme}}" wx:key="unique" data-index="{{index}}" class="installment-months{{curInstallmentSchemeIdx === index ? ' installment-months-this' : ''}}" bindtap="selectInstallmentScheme">{{item.months}}</view>
+    <view class="finish" bindtap="hideInstallment">确认</view>
+  </view>
+</view>

@@ -1,0 +1,216 @@
+/* pages/confirm-order/index.wxss */
+page {
+  background-color: #F5F6FA;
+}
+
+.img-split {
+  width: 750rpx;
+  height: 7rpx;
+}
+
+.user-info {
+  background-color: #FFF;
+  width: 750rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  vertical-align: middle;
+}
+
+.user-info .username {
+  font-size: 36rpx;
+  color: #333;
+  margin-left: 33rpx;
+}
+
+.user-info .tel {
+  font-size: 36rpx;
+  color: #323232;
+  margin-left: 38rpx;
+}
+
+.store {
+  background-color: #FFF;
+  width: 750rpx;
+  height: 100rpx;
+  line-height: 33rpx;
+  font-size: 28rpx;
+  color: #999;
+  padding: 0 33rpx;
+}
+
+.pay {
+  background-color: #FFF;
+  position: relative;
+  width: 750rpx;
+  height: 100rpx;
+  border-bottom: 1rpx solid #F2F2F2;
+}
+
+.weixin {
+  width: 44rpx;
+  height: 36rpx;
+  position: absolute;
+  top: 32rpx;
+  left: 33rpx;
+}
+
+.pay-method {
+  position: absolute;
+  top: 34rpx;
+  left: 107rpx;
+  font-size: 30rpx;
+  color: #111;
+}
+
+.selected {
+  width: 32rpx;
+  height: 32rpx;
+  position: absolute;
+  top: 34rpx;
+  right: 37rpx;
+}
+
+.select-pay {
+  background-color: #FFF;
+  width: 750rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 28rpx;
+  color: #999;
+}
+
+.order-title {
+  background-color: #FFF;
+  width: 750rpx;
+  height: 180rpx;
+  line-height: 180rpx;
+  vertical-align: middle;
+  position: relative;
+}
+
+.title-img {
+  width: 201rpx;
+  height: 143rpx;
+  display: inline-block;
+  position: absolute;
+  top: 16rpx;
+  left: 31rpx;
+}
+
+.title-name {
+  width: 310rpx;
+  height: 100rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  position: absolute;
+  top: 29rpx;
+  left: 262rpx;
+}
+
+.title-money {
+  width: 130rpx;
+  height: 100rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  top: 29rpx;
+  right: 31rpx;
+}
+
+.money-much {
+  width: 100rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  color: #F0421E;
+  text-align: right;
+}
+
+.money-many {
+  width: 100rpx;
+  height: 50rpx;
+  line-height: 50rpx;
+  font-size: 24rpx;
+  color: #999;
+  text-align: right;
+}
+
+.installment-first-year {
+  background-color: #FFF;
+  width: 750rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin: 0 28rpx;
+  border-top: 1rpx solid #F2F2F2;
+}
+
+.installment-after {
+  background-color: #FFF;
+  width: 750rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin: 0 28rpx;
+  border-top: 1rpx solid #F2F2F2;
+}
+
+.pay-way {
+  font-size: 28rpx;
+  color: #111;
+  margin-left: 28rpx;
+}
+
+.downpayment-detail {
+  font-size: 24rpx;
+  color: #666;
+  margin-left: 10rpx;
+}
+
+.installment-way {
+  font-size: 28rpx;
+  color: #111;
+  margin-left: 28rpx;
+}
+
+.confirm {
+  background-color: #FFF;
+  position: fixed;
+  bottom: 0;
+  width: 750rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.confirm-total {
+  width: 300rpx;
+  height: 100rpx;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  align-content: space-around
+}
+
+.confirm-title {
+  font-size: 30rpx;
+  color: #333;
+}
+
+.confirm-amount {
+  font-size: 60rpx;
+  color: #F0421E;
+}
+
+.confirm-btn {
+  width: 260rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  font-size: 40rpx;
+  color: #FFF;
+  background-color: #F0421E;
+}
